@@ -1,1 +1,1 @@
-# "Hell, World" in C.
+# "Hello, World" in C.
