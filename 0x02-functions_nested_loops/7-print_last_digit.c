@@ -10,13 +10,17 @@ int print_last_digit(int i)
 {
 	int last_digit;
 
-	if (i >= 0)
+	if (i > 0)
 	{
 		last_digit = i % 10;
 	}
+	else if (i == 0)
+	{
+		last_digit = i * 0;
+	}
 	else
 	{
-		last_digit = (i * -1) % 10;
+		last_digit = (i % 10) * -1;
 	}
 	return (last_digit);
 }
