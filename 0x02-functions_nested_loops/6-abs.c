@@ -5,7 +5,7 @@
  * _abs - Computes the absolute value of an integer.
  * Return: absolute value
  */
-int _abs(int)
+int _abs(int i)
 {
-	return (int * ((int > 0) - (int < 0));
+	return (i * ((i > 0) - ( < 0));
 }
