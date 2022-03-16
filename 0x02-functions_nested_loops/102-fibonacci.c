@@ -7,7 +7,10 @@
 
 int main(void)
 {
-	int number, i;
+	int i;
+	int sum = 3;
+	int firstN = 1;
+	int secondN = 2;
 
 	for (i = 1; i <= 50; i++)
 	{
@@ -17,8 +20,11 @@ int main(void)
 		}
 		else
 		{
-			number = (i - 1) + (i - 2);
-			printf("%d, ", number);
+			printf("%d, ", sum);
+			firstN = secondN;
+			secondN = sum;
+			sum = firstN + secondN;
+
 		}
 	}
 	return (0);
