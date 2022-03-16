@@ -8,30 +8,45 @@
 
 void print_times_table(int n)
 {
-	int i, j;
+	int row;
+	int column;
+	int product;
 
-	if (n > 0)
+	for (row = 0, row <= n; row++)
 	{
-		for (i = 0; i <= n; i++)
+		for (column = 0; column <= n; column++)
 		{
-			for (j = 0; j <= n; j++)
+			product = row * column;
+
+			if (column == 0)
 			{
-				if (j < n)
-				{
-					if (n < 10)
-					{
-						printf("%d,   ", i * j);
-					}
-					else
-					{
-						printf("%d,  ", i * j);
-					}
-				}
-				else
-				{
-					printf("%d\n", i * j);
-				}
+				_putchar('0');
+			}
+			else if (product < 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(product % 10 + '0');
+			}
+			else if (product >= 10 && product < 100)
+			{
+
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar((product / 10) % 10 + '0');
+			}
+			else if (product > 99 && product < 1000)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(product / 100 + '0');
+				_putchar((product / 10) % 10 + '0');
+				_putchar(product % 10 + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
