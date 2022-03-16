@@ -20,7 +20,7 @@ int main(void)
 		}
 		else if ((i % 5) == 0)
 		{
-			sum = sum + 1;
+			sum = sum + i;
 		}
 	}
 	printf("%lu\n", sum);
