@@ -12,7 +12,7 @@ void print_times_table(int n)
 	int column;
 	int product;
 
-	for (row = 0, row <= n; row++)
+	for (row = 0; row <= n; row++)
 	{
 		for (column = 0; column <= n; column++)
 		{
