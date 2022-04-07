@@ -1,10 +1,8 @@
-#include <stdioi.h>
-
+#include <stdio.h>
 /**
  * main - Prints the numbers from 1 to 100.
  * Return: Always 0
  */
-
 int main(void)
 {
 	int i;
